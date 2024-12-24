@@ -13,7 +13,7 @@ public class LostArkController {
 
     private final LostArkService lostArkService;
 
-    @GetMapping("/character-info/{characterName}")
+    @GetMapping("/api/character/{characterName}")
     public ArmoryTotalDto getCharacterInfo(@PathVariable("characterName") String characterName) {
         return lostArkService.getCharacterInfo(characterName);
 
